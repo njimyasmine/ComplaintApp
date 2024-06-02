@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "complaintApp", "complaintApp.csproj", "{4BE536B7-AE9E-4936-AF47-68DE68529680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BE536B7-AE9E-4936-AF47-68DE68529680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE536B7-AE9E-4936-AF47-68DE68529680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE536B7-AE9E-4936-AF47-68DE68529680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE536B7-AE9E-4936-AF47-68DE68529680}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
