@@ -9,8 +9,7 @@ ComplaintApp is a .NET application designed to manage and track customer complai
 4. [Design Decisions and Used Technologies](#design-decisions-and-used-technologies)
 5. [API Documentation](#api-documentation)
 6. [Project Structure](#project-structure)
-7. [Swagger Documentation](#swagger-documentation)
-8. [Libraries Used](#Libraries-Used)
+7. [Libraries Used](#Libraries-Used)
 
 
 ## Prerequisites
@@ -31,7 +30,7 @@ Follow these steps to set up and run the application:
 ### 1. Clone the Repository
 First, clone the repository to your local machine using git:
 ```sh
-git clone https://github.com/yourusername/complaintApp.git
+git clone https://github.com/njimyasmine/ComplaintApp.git
 
 cd complaintApp
 ```
@@ -57,7 +56,7 @@ To run the application, use the following command:
 ``` sh
 dotnet run
 ```
-The API will start and typically be available at https://localhost:5001 or http://localhost:5000.
+The API is documented using Swagger (OpenAPI). You can access the Swagger UI to explore the API endpoints, request parameters, and responses at `http://localhost:5022/swagger/index.html`.
 
 ### 5. Testing the API
 You can test the API using tools like Postman or curl. Make sure to check the endpoints and their respective request types in the ComplaintsController.cs file.
@@ -87,40 +86,7 @@ The following are the available endpoints for the Complaints API:
 - **URL:** `/api/Complaints`
 - **Description:** Retrieves a list of all complaints.
 - **Parameters:** None
-- **Example Request:**
-  ```http
-  GET /api/Complaints HTTP/1.1
-  Host: localhost:5022
-Example Response:
-``` sh
-[
-  {
-    "id": 1,
-    "productId": 0,
-    "customer": {
-      "id": 1,
-      "name": "yasmine",
-      "email": "yasmine@gmail.com"
-    },
-    "date": "2024-06-02T23:26:55.847",
-    "description": "this is a claim",
-    "status": 0
-  }
-]
-```
-- Response Code: 200 (Success)
-- Media Type: application/json
-
-#### 1. Get All Complaints
-- **Method:** `GET`
-- **URL:** `/api/Complaints`
-- **Description:** Retrieves a list of all complaints.
-- **Parameters:** None
-- **Example Request:**
-  ```http
-  GET /api/Complaints HTTP/1.1
-  Host: localhost:5022
-Example Response:
+- **Example Response:**
 ``` sh
 [
   {
@@ -192,7 +158,7 @@ Example Response:
 #### 5. Delete a Complaint
 - **Method:** `DELETE`
 - **URL:** `/api/Complaints/{id}`
-- **Description:** Deletes a complaint by its ID.
+- **Description:** Updates a complaint's status to canceled by its ID.
 - Response Code: 200 (Success)
 - Media Type: Success
 
@@ -240,13 +206,6 @@ complaintApp/
 ├── .gitignore
 └── other project files
 ``` 
-
-## Swagger Documentation
-
-The API is documented using Swagger (OpenAPI). You can access the Swagger UI to explore the API endpoints, request parameters, and responses.
-
-- [Swagger UI](http://localhost:5022/swagger/index.html)
-
 
 ## Libraries Used
 
