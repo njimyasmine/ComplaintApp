@@ -25,7 +25,6 @@ Follow these steps to set up and run the application:
 2. [Install Dependencies](#2-install-dependencies)
 3. [Set Up the Database](#3-set-up-the-database)
 4. [Run the Application](#5-run-the-application)
-5. [Testing the API](#6-testing-the-api)
 
 ### 1. Clone the Repository
 First, clone the repository to your local machine using git:
@@ -57,9 +56,6 @@ To run the application, use the following command:
 dotnet run
 ```
 The API is documented using Swagger (OpenAPI). You can access the Swagger UI to explore the API endpoints, request parameters, and responses at `http://localhost:5022/swagger/index.html`.
-
-### 5. Testing the API
-You can test the API using tools like Postman or curl. Make sure to check the endpoints and their respective request types in the ComplaintsController.cs file.
 
 ## Design Decisions and Used Technologies
 
