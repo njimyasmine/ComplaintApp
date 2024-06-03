@@ -100,7 +100,7 @@ namespace complaintApp.Controllers
             if (status.HasValue)
                 query = query.Where(c => c.Status == status.Value);
 
-            return await query.ToListAsync();
+            return await query.Include(c=>c.Customer).ToListAsync();
         }
 
         private bool ComplaintExists(int id) => _context.Complaints.Any(e => e.Id == id);
